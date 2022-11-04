@@ -1,3 +1,39 @@
-body { 
-    /* background: red; */
+:root{
+    --app-primary-dark: rgb(51, 51, 51); 
+    --app-secondary-dark: rgb(63, 63, 63);
 }
+
+body{
+    background: var(--app-primary-dark);
+    font-family: 'Bungee Spice', cursive;
+    font-family: 'Exo 2', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.primary-dark{
+    background: var(--app-primary-dark);
+}
+
+.secondary-dark{
+    background: var(--app-secondary-dark);
+}
+
+p{
+    margin: 10px 0 !important;
+}
+
+/* login page */
+.login-section {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.login-container {
+    width: 400px;
+    /* margin-top: 50px; */
+    text-align: center;
+}
+
