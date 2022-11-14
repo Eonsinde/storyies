@@ -17,4 +17,16 @@ router.get('/google/callback', passport.authenticate('google', { failureRedirect
 });
 
 
+// @desc Logout user
+// @route GET /auth/logout
+// NB: using get here isn't always the best due to 
+// pre-caching that web accelerators perform by using 
+// nav links in a web page to cache the page the link leads to
+router.get('/logout', (req, res, next) => {
+    req.logout(function(err) {
+        if (err) { return next(err); }
+        res.redirect('/');
+    });
+})
+
 module.exports = router;
