@@ -8,6 +8,7 @@ body{
     font-family: 'Bungee Spice', cursive;
     font-family: 'Exo 2', sans-serif;
     font-family: 'Noto Sans', sans-serif;
+    overflow-x: none;
 }
 
 .primary-dark{
